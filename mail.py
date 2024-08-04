@@ -12,33 +12,6 @@ nltk.download('stopwords')
 # Download the punkt tokenizer data
 nltk.download('punkt')
 
-
-# def transform_text(text):
-#   # lower casing
-#   text=text.lower()
-#   # tokenizing
-#   text=nltk.word_tokenize(text)
-#
-#   # removing special charaters
-#   y=[]
-#   for i in text:
-#     if i.isalnum():
-#       y.append(i)
-#
-# # removing stop words
-#   text=y[:]
-#   y.clear()
-#   for i in text:
-#     if i not in stopwords.words('english') and i not in string.punctuation:
-#       y.append(i)
-#
-# # converting word into root form
-#   text=y[:]
-#   y.clear()
-#   for i in text:
-#     y.append(ps.stem(i))
-#   return " ".join(y)
-
 # Function to preprocess text
 def transform_text(text):
     # Convert to lowercase
